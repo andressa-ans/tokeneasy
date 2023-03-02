@@ -1,0 +1,30 @@
+{
+	"contracts": {
+		"ExampleToken": "./ExampleToken.cdc",
+		"SecurityToken": "./SecurityToken.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"sandboxnet": "access.sandboxnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"drina": {
+			"address": "e03daebed8ca0615",
+			"key": "6d62b809f662d02e67c0a3d286f2a2131a877d81129374ceb7a8c56d2f1ba1e5"
+		},
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "4a109bcf97f48c8e06a34b26603444bb21548e276fd43ec4629df39900b7ead1"
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"SecurityToken",
+				"ExampleToken"
+			]
+		}
+	}
+}
